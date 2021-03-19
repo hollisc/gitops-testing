@@ -1,0 +1,10 @@
+apiVersion: integration.ibm.com/v1beta1
+kind: PlatformNavigator
+metadata:
+  name: {{ .Values.instances.platformnavigator.name }}
+spec:
+  license:
+    accept: {{ .Values.instances.platformnavigator.license }}
+  mqDashboard: {{ .Values.instances.platformnavigator.mqDashboard }}
+  version: {{ .Values.instances.platformnavigator.version }}
+  replicas: {{ .Values.instances.platformnavigator.replicas }}

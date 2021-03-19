@@ -1,0 +1,6 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: {{ .Values.subscriptions.cloudpakforintegration.name }}
+spec:
+  {{- toYaml .Values.subscriptions.cloudpakforintegration.subscription | nindent 2 }}
