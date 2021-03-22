@@ -2,6 +2,8 @@ apiVersion: integration.ibm.com/v1beta1
 kind: PlatformNavigator
 metadata:
   name: {{ .Values.instances.platformnavigator.name }}
+  annotations:
+    helm.sh/hook-weight: "210"  
 spec:
   license:
     accept: {{ .Values.instances.platformnavigator.license }}

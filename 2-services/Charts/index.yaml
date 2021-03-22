@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  ibm-catalogs:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-03-22T01:21:11.775883-04:00"
+    description: A Helm chart for Kubernetes
+    digest: f24391411a555b982cda27611a665fe3bfa6b764fce35e229cb0fca793c8c5a6
+    name: ibm-catalogs
+    type: application
+    urls:
+    - ibm-catalogs-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-03-22T01:21:11.773437-04:00"
