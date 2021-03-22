@@ -3,12 +3,34 @@ entries:
   ibm-catalogs:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-03-22T01:33:27.500364-04:00"
+    created: "2021-03-22T01:37:50.212287-04:00"
     description: A Helm chart for Kubernetes
     digest: 01d33a69e43694df2d0f66227b504ae71e03ac473e64d82b8c09cb88beef0b3d
     name: ibm-catalogs
     type: application
     urls:
-    - ibm-catalogs-0.1.0.tgz
+    - https://hollisc.github.io/gitops-testing/ibm-catalogs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-22T01:33:27.497339-04:00"
+  ibm-common-services:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-03-22T01:37:50.212977-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 2dcc25da25d9dee433c8e740b984a28981a77a81a410b492ed85d969753c1c03
+    name: ibm-common-services
+    type: application
+    urls:
+    - https://hollisc.github.io/gitops-testing/ibm-common-services-0.1.0.tgz
+    version: 0.1.0
+  ibm-cp-integration-base:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-03-22T01:37:50.213876-04:00"
+    description: A Helm chart for Kubernetes
+    digest: aa21e2da657a874b6e60826753600ff927b293e96721e0776ea6b491cd4aa2ce
+    name: ibm-cp-integration-base
+    type: application
+    urls:
+    - https://hollisc.github.io/gitops-testing/ibm-cp-integration-base-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-03-22T01:37:50.210314-04:00"
