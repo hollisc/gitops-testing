@@ -3,7 +3,7 @@ entries:
   ibm-catalogs:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-03-30T00:33:26.519222-04:00"
+    created: "2021-03-31T17:11:13.780977-04:00"
     description: A Helm chart for Kubernetes
     digest: 01d33a69e43694df2d0f66227b504ae71e03ac473e64d82b8c09cb88beef0b3d
     name: ibm-catalogs
@@ -14,7 +14,7 @@ entries:
   ibm-common-services:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-03-30T00:33:26.521504-04:00"
+    created: "2021-03-31T17:11:13.783994-04:00"
     description: A Helm chart for Kubernetes
     digest: 2dcc25da25d9dee433c8e740b984a28981a77a81a410b492ed85d969753c1c03
     name: ibm-common-services
@@ -25,7 +25,7 @@ entries:
   ibm-cp-integration-base:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-03-30T00:33:26.522187-04:00"
+    created: "2021-03-31T17:11:13.785764-04:00"
     description: A Helm chart for Kubernetes
     digest: 4ed7f52af2cbe55ca412e2a631ac9d73d70d276f32ad545b0fa9816302c6805f
     name: ibm-cp-integration-base
@@ -33,4 +33,15 @@ entries:
     urls:
     - https://hollisc.github.io/gitops-testing/ibm-cp-integration-base-0.1.2.tgz
     version: 0.1.2
-generated: "2021-03-30T00:33:26.516861-04:00"
+  ibm-mq:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-03-31T17:11:13.791738-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 7b3cd2f879286870752c89f85a9539232807ea62ad4f1965b42952fb916d881c
+    name: ibm-mq
+    type: application
+    urls:
+    - https://hollisc.github.io/gitops-testing/ibm-mq-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-03-31T17:11:13.777511-04:00"
