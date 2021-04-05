@@ -1,0 +1,14 @@
+{{- if .Values.route.enabled -}}
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: {{ include "mq-spring-app.fullname" . }}
+spec:
+  to:
+    kind: Service
+    name: {{ include "mq-spring-app.fullname" . }}
+    weight: 100
+  tls:
+    termination: edge
+  wildcardPolicy: None
+{{- end }}
