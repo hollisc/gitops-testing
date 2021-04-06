@@ -8,7 +8,7 @@ spec:
     kind: Service
     name: {{ include "mq-spring-app.fullname" . }}
     weight: 100
-  tls:
-    termination: edge
+  # tls:
+  #   termination: edge
   wildcardPolicy: None
 {{- end }}

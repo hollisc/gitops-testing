@@ -7,9 +7,17 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: {{ .Values.image.port }}
+    - port: {{ .Values.service.http.port }}
+      targetPort: {{ .Values.image.http.port }}
       protocol: TCP
-      name: http
+      name: 8080-tcp
+    - name: 8443-tcp
+      protocol: TCP
+      port: {{ .Values.image.https.port }}
+      targetPort: {{ .Values.image.https.port }}
+    - name: 8778-tcp
+      protocol: TCP
+      port: {{ .Values.image.additional.port }}
+      targetPort: {{ .Values.image.additional.port }}
   selector:
     {{- include "mq-spring-app.selectorLabels" . | nindent 4 }}

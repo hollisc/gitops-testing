@@ -3,7 +3,7 @@ entries:
   ibm-catalogs:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-06T01:13:42.62828-04:00"
+    created: "2021-04-06T01:41:42.592971-04:00"
     description: A Helm chart for Kubernetes
     digest: 01d33a69e43694df2d0f66227b504ae71e03ac473e64d82b8c09cb88beef0b3d
     name: ibm-catalogs
@@ -14,7 +14,7 @@ entries:
   ibm-common-services:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-06T01:13:42.62913-04:00"
+    created: "2021-04-06T01:41:42.593523-04:00"
     description: A Helm chart for Kubernetes
     digest: 2dcc25da25d9dee433c8e740b984a28981a77a81a410b492ed85d969753c1c03
     name: ibm-common-services
@@ -25,7 +25,7 @@ entries:
   ibm-cp-integration-base:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-06T01:13:42.629899-04:00"
+    created: "2021-04-06T01:41:42.594766-04:00"
     description: A Helm chart for Kubernetes
     digest: 4ed7f52af2cbe55ca412e2a631ac9d73d70d276f32ad545b0fa9816302c6805f
     name: ibm-cp-integration-base
@@ -36,7 +36,7 @@ entries:
   ibm-mq:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-06T01:13:42.631594-04:00"
+    created: "2021-04-06T01:41:42.595973-04:00"
     description: A Helm chart for Kubernetes
     digest: 7b3cd2f879286870752c89f85a9539232807ea62ad4f1965b42952fb916d881c
     name: ibm-mq
@@ -47,12 +47,12 @@ entries:
   mq-spring-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-06T01:13:42.632755-04:00"
+    created: "2021-04-06T01:41:42.59679-04:00"
     description: A Helm chart for Kubernetes
-    digest: ebd06e4cd9e1e9d7e5e2a1c7ee6914e6ca8b2ae7fde9244dc8404210aa2fa166
+    digest: 2b850ff685d8e4de542b7076063bed11f78d778271e2c2d2bc7041c08b33db42
     name: mq-spring-app
     type: application
     urls:
-    - https://hollisc.github.io/gitops-testing/mq-spring-app-0.1.5.tgz
-    version: 0.1.5
-generated: "2021-04-06T01:13:42.625882-04:00"
+    - https://hollisc.github.io/gitops-testing/mq-spring-app-0.1.6.tgz
+    version: 0.1.6
+generated: "2021-04-06T01:41:42.592107-04:00"

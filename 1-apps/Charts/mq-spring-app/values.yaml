@@ -8,7 +8,12 @@ image:
   repository: image-registry.openshift-image-registry.svc:5000/mqspring/mqspring@sha256
   tag: 9c8299c61e1bb41f44f426eb557edeaa7f60f2f1ea20e7daf45295f460d0448d
   pullPolicy: IfNotPresent
-  port: 8080
+  http:
+    port: 8080
+  https:
+    port: 8443
+  additional:
+    port: 8778
 
 imagePullSecrets: []
 nameOverride: ""
