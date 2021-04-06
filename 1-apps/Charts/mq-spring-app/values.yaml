@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: image-registry.openshift-image-registry.svc:5000/java-test/mqspring-d
-  tag: sha256:1d4f0df66a40b3353fb16b551425057972e592a61e6df423a96d08ec8f2d5fa9
+  repository: image-registry.openshift-image-registry.svc:5000/mqspring/mqspring@sha256
+  tag: 9c8299c61e1bb41f44f426eb557edeaa7f60f2f1ea20e7daf45295f460d0448d
   pullPolicy: IfNotPresent
   port: 8080
 

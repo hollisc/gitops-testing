@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+oc geapiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "mq-spring-app.fullname" . }}
@@ -29,14 +29,14 @@ spec:
             - name: http
               containerPort: {{ .Values.image.port }}
               protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: http
-          readinessProbe:
-            httpGet:
-              path: /
-              port: http
+          # livenessProbe:
+          #   httpGet:
+          #     path: /
+          #     port: http
+          # readinessProbe:
+          #   httpGet:
+          #     path: /
+          #     port: http
           env:
             - name: QM
               valueFrom:
@@ -62,6 +62,16 @@ spec:
               valueFrom:
                 secretKeyRef:
                   key: PASSWORD
+                  name: {{ include "mq-spring-app.fullname" . }}
+            - name: QUEUE_NAME
+              valueFrom:
+                configMapKeyRef:
+                  key: QUEUE_NAME
+                  name: {{ include "mq-spring-app.fullname" . }}
+            - name: APP_NAME
+              valueFrom:
+                configMapKeyRef:
+                  key: APP_NAME
                   name: {{ include "mq-spring-app.fullname" . }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
