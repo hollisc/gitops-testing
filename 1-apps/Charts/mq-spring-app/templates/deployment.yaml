@@ -37,6 +37,32 @@ spec:
             httpGet:
               path: /
               port: http
+          env:
+            - name: QM
+              valueFrom:
+                configMapKeyRef:
+                  key: QM
+                  name: {{ include "mq-spring-app.fullname" . }}
+            - name: CHANNEL
+              valueFrom:
+                configMapKeyRef:
+                  key: CHANNEL
+                  name: {{ include "mq-spring-app.fullname" . }}
+            - name: CONNECTION_NAME
+              valueFrom:
+                configMapKeyRef:
+                  key: CONNECTION_NAME
+                  name: {{ include "mq-spring-app.fullname" . }}
+            - name: USER
+              valueFrom:
+                secretKeyRef:
+                  key: USER
+                  name: {{ include "mq-spring-app.fullname" . }}
+            - name: PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: PASSWORD
+                  name: {{ include "mq-spring-app.fullname" . }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
