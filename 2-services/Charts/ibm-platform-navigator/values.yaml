@@ -4,7 +4,7 @@
 
 subscriptions:
   platformnavigator:
-    name: ibm-integration-platform-navigator
+    name: ibm-platform-navigator
     subscription:
       channel: v4.1-eus
       installPlanApproval: Automatic
