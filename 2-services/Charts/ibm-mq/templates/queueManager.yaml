@@ -8,12 +8,12 @@ spec:
   queueManager:
     {{- toYaml .Values.queuemanager | nindent 2 }}
   securityContext:
-    initVolumeAsRoot: {{ .Values.securityContext.initVolumeAsRoot }}
+    initVolumeAsRoot: {{ .Values.queuemanager.securityContext.initVolumeAsRoot }}
   template:
-    {{- toYaml .Values.template | nindent 2 }}
-  terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
+    {{- toYaml .Values.queuemanager.template | nindent 2 }}
+  terminationGracePeriodSeconds: {{ .Values.queuemanager.terminationGracePeriodSeconds }}
   tracing:
-    {{- toYaml .Values.tracing | nindent 2 }}
+    {{- toYaml .Values.queuemanager.tracing | nindent 2 }}
   version: {{ .Values.version }}
   web:
     enabled: {{ .Values.web.enabled }}
