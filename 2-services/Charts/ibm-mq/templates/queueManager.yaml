@@ -8,10 +8,10 @@ spec:
   queueManager:
     {{- toYaml .Values.queuemanager | nindent 4 }}
   securityContext:
-    initVolumeAsRoot: {{ .Values.queuemanager.securityContext.initVolumeAsRoot }}
+    initVolumeAsRoot: {{ .Values.securityContext.initVolumeAsRoot }}
   template:
-    {{- toYaml .Values.queuemanager.template | nindent 4 }}
-  terminationGracePeriodSeconds: {{ .Values.queuemanager.terminationGracePeriodSeconds }}
+    {{- toYaml .Values.template | nindent 4 }}
+  terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
   tracing:
     {{- toYaml .Values.queuemanager.tracing | nindent 4 }}
   version: {{ .Values.version }}
