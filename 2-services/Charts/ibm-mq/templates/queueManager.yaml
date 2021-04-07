@@ -13,7 +13,7 @@ spec:
     {{- toYaml .Values.template | nindent 4 }}
   terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
   tracing:
-    {{- toYaml .Values.queuemanager.tracing | nindent 4 }}
+    {{- toYaml .Values.tracing | nindent 4 }}
   version: {{ .Values.version }}
   web:
     enabled: {{ .Values.web.enabled }}

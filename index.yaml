@@ -3,7 +3,7 @@ entries:
   ibm-catalogs:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-07T10:57:01.59153-04:00"
+    created: "2021-04-07T11:05:10.617014-04:00"
     description: A Helm chart for Kubernetes
     digest: 01d33a69e43694df2d0f66227b504ae71e03ac473e64d82b8c09cb88beef0b3d
     name: ibm-catalogs
@@ -14,7 +14,7 @@ entries:
   ibm-common-services:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-07T10:57:01.592782-04:00"
+    created: "2021-04-07T11:05:10.618474-04:00"
     description: A Helm chart for Kubernetes
     digest: 2dcc25da25d9dee433c8e740b984a28981a77a81a410b492ed85d969753c1c03
     name: ibm-common-services
@@ -25,7 +25,7 @@ entries:
   ibm-cp-integration-base:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-07T10:57:01.59456-04:00"
+    created: "2021-04-07T11:05:10.620416-04:00"
     description: A Helm chart for Kubernetes
     digest: 4ed7f52af2cbe55ca412e2a631ac9d73d70d276f32ad545b0fa9816302c6805f
     name: ibm-cp-integration-base
@@ -36,7 +36,7 @@ entries:
   ibm-cp4i-operators:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-07T10:57:01.595587-04:00"
+    created: "2021-04-07T11:05:10.622582-04:00"
     description: A Helm chart for Kubernetes
     digest: 59d60e782d5dc8b7b6d530ef119fc8abf5984b10f0ffae7f3aaa49fe4a410945
     name: ibm-cp4i-operators
@@ -47,18 +47,18 @@ entries:
   ibm-mq:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-07T10:57:01.596421-04:00"
+    created: "2021-04-07T11:05:10.623788-04:00"
     description: A Helm chart for Kubernetes
-    digest: 94a90b7bf5f72762d2eb30ce83decc6f90c81d32d39933fc813d7014c9c890e0
+    digest: 439b58565e97f2627d9cc95da7fbbf66484073524fe068e42a82ae3bc5b64a81
     name: ibm-mq
     type: application
     urls:
-    - https://hollisc.github.io/gitops-testing/ibm-mq-0.1.5.tgz
-    version: 0.1.5
+    - https://hollisc.github.io/gitops-testing/ibm-mq-0.1.6.tgz
+    version: 0.1.6
   ibm-platform-navigator:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-07T10:57:01.597409-04:00"
+    created: "2021-04-07T11:05:10.625756-04:00"
     description: A Helm chart for Kubernetes
     digest: 61afc641842c76f6f6af73408f93615e38f4abf523691e2bb1c4dbf325759fcc
     name: ibm-platform-navigator
@@ -69,7 +69,7 @@ entries:
   mq-spring-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-07T10:57:01.5988-04:00"
+    created: "2021-04-07T11:05:10.627803-04:00"
     description: A Helm chart for Kubernetes
     digest: f3f608fd1b8875b69697009f9d88c03bd78cc109fb63c00d2fab4099345d795b
     name: mq-spring-app
@@ -77,4 +77,4 @@ entries:
     urls:
     - https://hollisc.github.io/gitops-testing/mq-spring-app-0.1.7.tgz
     version: 0.1.7
-generated: "2021-04-07T10:57:01.590454-04:00"
+generated: "2021-04-07T11:05:10.615199-04:00"
