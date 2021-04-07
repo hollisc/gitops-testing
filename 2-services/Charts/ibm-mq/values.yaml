@@ -49,25 +49,22 @@ queuemanager:
     recoveryLogs:
       enabled: false
 
-  securityContext:
-    initVolumeAsRoot: false
+securityContext:
+  initVolumeAsRoot: false
 
-  securityContext:
-    initVolumeAsRoot: false
+template:
+  pod:
+    containers:
+    - env:
+      - name: MQSNOAUT
+        value: "yes"
+      name: qmgr
+      resources: {}
 
-  template:
-    pod:
-      containers:
-      - env:
-        - name: MQSNOAUT
-          value: "yes"
-        name: qmgr
-        resources: {}
+terminationGracePeriodSeconds: 30
 
-  terminationGracePeriodSeconds: 30
-
-  tracing:
-    agent: {}
-    collector: {}
-    enabled: false
-    namespace: ""
+tracing:
+  agent: {}
+  collector: {}
+  enabled: false
+  namespace: ""
