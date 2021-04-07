@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "mq-spring-app.fullname" . }}
+  name: {{ .Values.name }}
   labels:
     {{- include "mq-spring-app.labels" . | nindent 4 }}
 spec:

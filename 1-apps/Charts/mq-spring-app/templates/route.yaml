@@ -2,7 +2,7 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: {{ include "mq-spring-app.fullname" . }}
+  name: {{ .Values.name }}
 spec:
   to:
     kind: Service

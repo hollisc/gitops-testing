@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ include "mq-spring-app.fullname" . }}
+  name: {{ .Values.name }}
 data:
   CHANNEL: {{ .Values.configmap.CHANNEL }}
   CONNECTION_NAME: {{ .Values.configmap.CONNECTION_NAME }}
