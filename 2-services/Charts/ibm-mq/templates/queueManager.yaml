@@ -4,16 +4,16 @@ metadata:
   name: {{ .Values.name }}
 spec:
   license:
-    {{- toYaml .Values.license | nindent 2 }}
+    {{- toYaml .Values.license | nindent 4 }}
   queueManager:
-    {{- toYaml .Values.queuemanager | nindent 2 }}
+    {{- toYaml .Values.queuemanager | nindent 4 }}
   securityContext:
     initVolumeAsRoot: {{ .Values.queuemanager.securityContext.initVolumeAsRoot }}
   template:
-    {{- toYaml .Values.queuemanager.template | nindent 2 }}
+    {{- toYaml .Values.queuemanager.template | nindent 4 }}
   terminationGracePeriodSeconds: {{ .Values.queuemanager.terminationGracePeriodSeconds }}
   tracing:
-    {{- toYaml .Values.queuemanager.tracing | nindent 2 }}
+    {{- toYaml .Values.queuemanager.tracing | nindent 4 }}
   version: {{ .Values.version }}
   web:
     enabled: {{ .Values.web.enabled }}
