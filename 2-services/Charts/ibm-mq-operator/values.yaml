@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 subscriptions:
-  ibm-mq:
+  ibmmq:
     name: ibm-mq
     subscription:
       channel: v1.3-eus

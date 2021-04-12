@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 subscriptions:
-  ibm-ace:
+  ibmace:
     name: ibm-ace
     subscription:
       channel: v1.2
