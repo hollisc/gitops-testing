@@ -1,9 +1,30 @@
 apiVersion: v1
 entries:
+  ibm-ace-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-04-12T17:06:38.265517-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 748f767cad6d437914188d86b042e5757d5b520ab58c96f32dba246429b534b5
+    name: ibm-ace-operator
+    type: application
+    urls:
+    - https://hollisc.github.io/gitops-testing/ibm-ace-operator-0.2.0.tgz
+    version: 0.2.0
   ibm-catalogs:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-09T17:16:18.969043-04:00"
+    created: "2021-04-12T17:06:38.267646-04:00"
+    description: A Helm chart for Kubernetes
+    digest: d0703d1c3b73371b01c467724303ad20af5d788683ac9c9d741e37909e5cba3a
+    name: ibm-catalogs
+    type: application
+    urls:
+    - https://hollisc.github.io/gitops-testing/ibm-catalogs-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-04-12T17:06:38.266551-04:00"
     description: A Helm chart for Kubernetes
     digest: 01d33a69e43694df2d0f66227b504ae71e03ac473e64d82b8c09cb88beef0b3d
     name: ibm-catalogs
@@ -14,7 +35,17 @@ entries:
   ibm-common-services:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-09T17:16:18.970145-04:00"
+    created: "2021-04-12T17:06:38.269414-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 7899e254ade1c4497c59c63db8c28dcff2475d317e6745c20279f452db8dc709
+    name: ibm-common-services
+    type: application
+    urls:
+    - https://hollisc.github.io/gitops-testing/ibm-common-services-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-04-12T17:06:38.268608-04:00"
     description: A Helm chart for Kubernetes
     digest: 2dcc25da25d9dee433c8e740b984a28981a77a81a410b492ed85d969753c1c03
     name: ibm-common-services
@@ -25,7 +56,7 @@ entries:
   ibm-cp-integration-base:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-04-09T17:16:18.971148-04:00"
+    created: "2021-04-12T17:06:38.270306-04:00"
     description: A Helm chart for Kubernetes
     digest: 4ed7f52af2cbe55ca412e2a631ac9d73d70d276f32ad545b0fa9816302c6805f
     name: ibm-cp-integration-base
@@ -36,7 +67,17 @@ entries:
   ibm-cp4i-operators:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-09T17:16:18.972183-04:00"
+    created: "2021-04-12T17:06:38.272251-04:00"
+    description: A Helm chart for Kubernetes
+    digest: a51b6f527b3473477d2a79d25c40675d67e3b2ce698f6e7e924aebbed8cc2acf
+    name: ibm-cp4i-operators
+    type: application
+    urls:
+    - https://hollisc.github.io/gitops-testing/ibm-cp4i-operators-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-04-12T17:06:38.271304-04:00"
     description: A Helm chart for Kubernetes
     digest: 59d60e782d5dc8b7b6d530ef119fc8abf5984b10f0ffae7f3aaa49fe4a410945
     name: ibm-cp4i-operators
@@ -47,7 +88,7 @@ entries:
   ibm-mq:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-09T17:16:18.97338-04:00"
+    created: "2021-04-12T17:06:38.273473-04:00"
     description: A Helm chart for Kubernetes
     digest: 439b58565e97f2627d9cc95da7fbbf66484073524fe068e42a82ae3bc5b64a81
     name: ibm-mq
@@ -55,10 +96,31 @@ entries:
     urls:
     - https://hollisc.github.io/gitops-testing/ibm-mq-0.1.6.tgz
     version: 0.1.6
+  ibm-mq-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-04-12T17:06:38.274198-04:00"
+    description: A Helm chart for Kubernetes
+    digest: d38e5a594769b31f3c03266a073d6e956d45c9907b2dd5cc57e7934365011dad
+    name: ibm-mq-operator
+    type: application
+    urls:
+    - https://hollisc.github.io/gitops-testing/ibm-mq-operator-0.2.0.tgz
+    version: 0.2.0
   ibm-platform-navigator:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-09T17:16:18.97423-04:00"
+    created: "2021-04-12T17:06:38.278149-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 8b543f1046831b45267360e7db8fefd80be39d8616ee058c6a7ab0bcd331adfe
+    name: ibm-platform-navigator
+    type: application
+    urls:
+    - https://hollisc.github.io/gitops-testing/ibm-platform-navigator-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-04-12T17:06:38.277437-04:00"
     description: A Helm chart for Kubernetes
     digest: 61afc641842c76f6f6af73408f93615e38f4abf523691e2bb1c4dbf325759fcc
     name: ibm-platform-navigator
@@ -69,7 +131,7 @@ entries:
   mq-spring-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-09T17:16:18.976583-04:00"
+    created: "2021-04-12T17:06:38.281999-04:00"
     description: A Helm chart for Kubernetes
     digest: fffe5b11ba7e113db0bdcca0d1cf655b30e1fdc9b14e19a87e8adf59841ac708
     name: mq-spring-app
@@ -79,7 +141,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-09T17:16:18.975423-04:00"
+    created: "2021-04-12T17:06:38.279783-04:00"
     description: A Helm chart for Kubernetes
     digest: f3f608fd1b8875b69697009f9d88c03bd78cc109fb63c00d2fab4099345d795b
     name: mq-spring-app
@@ -89,7 +151,7 @@ entries:
     version: 0.1.7
   openldap:
   - apiVersion: v1
-    created: "2021-04-09T17:16:18.978713-04:00"
+    created: "2021-04-12T17:06:38.283336-04:00"
     description: A OpenLDAP Chart for Kubernetes
     digest: dbd35c016c086f6d9db4b8f06ff5091d802525779a90a1cfaa002ed7356dff2f
     home: https://www.openldap.ort
@@ -104,4 +166,4 @@ entries:
     urls:
     - https://hollisc.github.io/gitops-testing/openldap-0.1.6.tgz
     version: 0.1.6
-generated: "2021-04-09T17:16:18.967759-04:00"
+generated: "2021-04-12T17:06:38.264287-04:00"

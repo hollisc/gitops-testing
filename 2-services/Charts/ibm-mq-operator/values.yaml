@@ -1,13 +1,13 @@
-# Default values for ibm-ace-operator.
+# Default values for ibm-mq-operator.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 subscriptions:
-  ibm-ace:
-    name: ibm-ace
+  ibm-mq:
+    name: ibm-mq
     subscription:
-      channel: v1.2
+      channel: v1.3-eus
       installPlanApproval: Automatic
-      name: ibm-appconnect
+      name: ibm-mq
       source: ibm-operator-catalog
       sourceNamespace: openshift-marketplace
