@@ -24,6 +24,9 @@ metadata:
   name: {{.Release.Name}}
   labels:
     app: {{.Release.Name}}
+  annotations:
+    argocd.argoproj.io/sync-wave: "200"
+    helm.sh/hook-weight: "200"
 spec:
   replicas: 1
   selector:
