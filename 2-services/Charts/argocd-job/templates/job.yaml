@@ -18,5 +18,4 @@ spec:
             - -o 
             - jsonpath='{.spec.domain}
       restartPolicy: Never
-      #serviceAccountName: {{ .Values.argo.serviceAccount | default "argocd-server" }}
   backoffLimit: 4
