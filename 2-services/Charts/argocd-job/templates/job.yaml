@@ -10,14 +10,10 @@ spec:
     spec:
       containers:
         - name: job
-          image: quay.io/openshift/origin-cli:latest
-          command: ["oc"]
-          args:
-            - get
-            - ingresses.config.openshift.io
-            - cluster
-            - -o 
-            - jsonpath='{.spec.domain}
+          image: {{ .Values.image }}:{{ .Values.tag }}
+          command: [" {{ .Values.command}} "]
+          args: 
+          {{- toYaml .Values.args | nindent 12 }}          
       restartPolicy: Never
       serviceAccountName: {{ .Values.serviceaccount }}
   backoffLimit: 4

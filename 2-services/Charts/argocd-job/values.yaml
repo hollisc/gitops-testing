@@ -10,3 +10,6 @@ hooktype: PostSync
 serviceaccount: default
 image: replace
 tag: replace 
+command: replace
+args: 
+  - replace
