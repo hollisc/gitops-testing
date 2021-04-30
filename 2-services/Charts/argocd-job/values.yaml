@@ -1,0 +1,10 @@
+# Default values for argocd-job.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+
+name: argocd-job 
+
+# ArgoCD Hook types - https://argoproj.github.io/argo-cd/user-guide/resource_hooks/
+hooktype: PostSync
+

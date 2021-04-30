@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: {{ .Values.name }}-
+  annotations:
+    argocd.argoproj.io/hook: {{ .Values.hooktype }}
+spec:
+  template:
+    spec:
+      containers:
+        - name: job
+          image: quay.io/openshift/origin-cli:latest
+          command: ["oc"]
+          args:
+            - get
+            - ingresses.config.openshift.io
+            - clsuter
+            - -o 
+            - jsonpath='{.spec.domain}
+      restartPolicy: Never
+      #serviceAccountName: {{ .Values.argo.serviceAccount | default "argocd-server" }}
+  backoffLimit: 4
