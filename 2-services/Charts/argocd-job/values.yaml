@@ -7,4 +7,4 @@ name: argocd-job
 
 # ArgoCD Hook types - https://argoproj.github.io/argo-cd/user-guide/resource_hooks/
 hooktype: PostSync
-
+serviceaccount: default

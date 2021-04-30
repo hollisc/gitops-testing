@@ -18,4 +18,5 @@ spec:
             - -o 
             - jsonpath='{.spec.domain}
       restartPolicy: Never
+      serviceAccountName: {{ .Values.serviceaccount }}
   backoffLimit: 4
