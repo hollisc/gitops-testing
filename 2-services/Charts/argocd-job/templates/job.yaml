@@ -2,7 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   generateName: {{ .Values.name }}-
-  namespace: {{ .Values.namesape }}
+  namespace: {{ .Values.namespace }}
   annotations:
     argocd.argoproj.io/hook: {{ .Values.hooktype }}
 spec:
