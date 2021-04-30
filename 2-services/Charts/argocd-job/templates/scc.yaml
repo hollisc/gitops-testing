@@ -16,7 +16,7 @@ readOnlyRootFilesystem: false
 metadata:
   annotations:
     argocd.argoproj.io/sync-options: Validate=false
-  name: tools-chartmuseum-privileged
+  name: {{ .Values.name }}-privileged
 fsGroup:
   type: RunAsAny
 groups:
