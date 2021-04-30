@@ -4,7 +4,9 @@
 
 
 name: argocd-job 
-
+namespace: replace
 # ArgoCD Hook types - https://argoproj.github.io/argo-cd/user-guide/resource_hooks/
 hooktype: PostSync
 serviceaccount: default
+image: replace
+tag: replace 
