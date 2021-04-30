@@ -14,7 +14,7 @@ spec:
           args:
             - get
             - ingresses.config.openshift.io
-            - clsuter
+            - cluster
             - -o 
             - jsonpath='{.spec.domain}
       restartPolicy: Never
