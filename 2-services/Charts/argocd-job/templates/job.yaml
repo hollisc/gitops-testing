@@ -11,9 +11,7 @@ spec:
       containers:
         - name: job
           image: {{ .Values.image }}:{{ .Values.tag }}
-          command: [" {{ .Values.command}} "]
-          securityContext:
-            runAsUser: 0
+          command: ["{{ .Values.command}}"]
           args: 
           {{- toYaml .Values.args | nindent 12 }}          
       restartPolicy: Never
