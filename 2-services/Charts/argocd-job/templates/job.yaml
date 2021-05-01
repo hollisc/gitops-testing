@@ -12,6 +12,8 @@ spec:
         - name: job
           image: {{ .Values.image }}:{{ .Values.tag }}
           command: [" {{ .Values.command}} "]
+          securityContext:
+            runAsUser: 0
           args: 
           {{- toYaml .Values.args | nindent 12 }}          
       restartPolicy: Never

@@ -16,7 +16,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: Validate=false
     argocd.argoproj.io/hook: {{ .Values.hooktype }}    
-  name: {{ .Values.serviceaccount }}-anyuid
+  name: {{ .Values.name }}-anyuid
 fsGroup:
   type: RunAsAny
 groups:
