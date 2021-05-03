@@ -6,12 +6,20 @@
 name: argocd-job 
 namespace: replace
 # ArgoCD Hook types - https://argoproj.github.io/argo-cd/user-guide/resource_hooks/
-hooktype: PostSync
+hooktype: replace
 serviceaccount: default
-image: replace
-tag: replace 
 roleaccess:
   - replace
-command: replace
-args: 
-  - replace
+init:
+  enabled: true
+  image: replace
+  tag: replace   
+  command: replace
+  args: 
+    - replace
+container:
+  image: replace
+  tag: replace   
+  command: replace
+  args: 
+    - replace
