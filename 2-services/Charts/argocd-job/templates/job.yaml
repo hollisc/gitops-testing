@@ -14,7 +14,7 @@ spec:
         - name: init
           image: {{ .Values.init.image }}:{{ .Values.init.tag }}
           imagePullPolicy: IfNotPresent
-          command: [".Values.init.command"]
+          command: ["{{ .Values.init.command}}"]
           args:
           {{- toYaml .Values.init.args | nindent 12 }}   
       {{- end }}
