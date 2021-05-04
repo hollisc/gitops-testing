@@ -4,5 +4,6 @@ metadata:
   name: {{ .Values.name }}
   annotations:
     argocd.argoproj.io/hook: {{ .Values.hooktype }}  
+    argocd.argoproj.io/hook-delete-policy: {{ .Values.hookdeletepolicy }}
 rules:
 {{- toYaml .Values.roleaccess | nindent 2 }} 
