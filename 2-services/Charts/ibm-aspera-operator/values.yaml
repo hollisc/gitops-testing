@@ -1,13 +1,13 @@
-# Default values for ibm-ace-operator.
+# Default values for ibm-aspera-operator.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 subscriptions:
-  ibmace:
-    name: ibm-ace
+  ibmaspera:
+    name: ibm-aspera
     subscription:
-      channel: v1.1-eus
+      channel: v1.2-eus
       installPlanApproval: Automatic
-      name: ibm-appconnect
+      name: aspera-hsts-operator
       source: ibm-operator-catalog
       sourceNamespace: openshift-marketplace

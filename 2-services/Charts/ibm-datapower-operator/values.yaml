@@ -1,13 +1,13 @@
-# Default values for ibm-ace-operator.
+# Default values for ibm-datapower-operator.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 subscriptions:
-  ibmace:
-    name: ibm-ace
+  ibmdatapower:
+    name: ibm-datapower
     subscription:
-      channel: v1.1-eus
+      channel: v1.2-eus
       installPlanApproval: Automatic
-      name: ibm-appconnect
+      name: datapower-operator
       source: ibm-operator-catalog
       sourceNamespace: openshift-marketplace

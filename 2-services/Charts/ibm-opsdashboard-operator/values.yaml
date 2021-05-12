@@ -1,13 +1,13 @@
-# Default values for ibm-ace-operator.
+# Default values for ibm-opsdashboard-operator.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 subscriptions:
-  ibmace:
-    name: ibm-ace
+  ibmopsdashboard:
+    name: ibm-opsdashboard
     subscription:
-      channel: v1.1-eus
+      channel: v2.1-eus
       installPlanApproval: Automatic
-      name: ibm-appconnect
+      name: ibm-integration-operations-dashboard
       source: ibm-operator-catalog
       sourceNamespace: openshift-marketplace
