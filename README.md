@@ -1,1 +1,1 @@
-# gitops-testing
+# Helm repository for validating Charts
