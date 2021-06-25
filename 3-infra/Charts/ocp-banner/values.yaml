@@ -1,0 +1,7 @@
+# Default values for ocp-banner.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+backgroundColor: teal
+location: BannerTop
+text: Cluster description
