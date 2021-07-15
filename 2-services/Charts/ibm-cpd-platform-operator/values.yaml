@@ -1,13 +1,13 @@
-# Default values for ibm-ace-operator.
+# Default values for ibm-cpd-platform-operator.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 subscriptions:
-  ibmcpdscheduling:
+  ibmcpdplatform:
     name: ibm-cpd-scheduling-catalog-subscription
     subscription:
-      channel: alpha
+      channel: stable-v1
       installPlanApproval: Automatic
-      name: ibm-cpd-scheduling-operator
+      name: cpd-platform-operator
       source: ibm-operator-catalog
       sourceNamespace: openshift-marketplace
