@@ -3,11 +3,10 @@
 # Declare variables to be passed into your templates.
 
 subscriptions:
-  ibmmq:
+  name: ibm-mq
+  subscription:
+    channel: v1.3-eus
+    installPlanApproval: Automatic
     name: ibm-mq
-    subscription:
-      channel: v1.3-eus
-      installPlanApproval: Automatic
-      name: ibm-mq
-      source: ibm-operator-catalog
-      sourceNamespace: openshift-marketplace
+    source: ibm-operator-catalog
+    sourceNamespace: openshift-marketplace
