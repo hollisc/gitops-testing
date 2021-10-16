@@ -7,8 +7,9 @@ metadata:
 
 spec:
   docker_registry_prefix: cp.icr.io/cp/cpd
+  ignoreForMaintenance: "false"
   license:
     accept: "true"
     license: Enterprise
-  version: 4.0.1
+  scaleConfig: small
   storageClass: managed-nfs-storage
