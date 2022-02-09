@@ -34,14 +34,14 @@ spec:
             value: "true"
           volumeMounts:
           - mountPath: /database
-            name: db2vol
-            volumeClaimTemplates:
-            - metadata:
-                name: db2vol
-              spec:
-                accessModes:
-                - ReadWriteOnce
-                resources:
-                requests:
-                  storage: 20Gi
-                storageClassName: {{ .Values.storageClassName }}
+              name: db2vol
+  volumeClaimTemplates:
+  - metadata:
+      name: db2vol
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      resources:
+        requests:
+          storage: 20Gi
+      storageClassName: {{ .Values.storageClassName }}
