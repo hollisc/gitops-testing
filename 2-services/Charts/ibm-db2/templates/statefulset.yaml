@@ -34,7 +34,7 @@ spec:
             value: "true"
           volumeMounts:
           - mountPath: /database
-              name: db2vol
+            name: db2vol
   volumeClaimTemplates:
   - metadata:
       name: db2vol
