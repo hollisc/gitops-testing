@@ -1,0 +1,34 @@
+# Default values for Helming.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+  name: mq
+  type: ClusterIP
+  replicas: 1
+  image:
+    repository: ibmcom/mq
+    imagePullPolicy: IfNotPresent
+  storageClassName: ibmc-block-gold
+  volumeMounts:
+    mountPath: /var/mqm
+    name: mqvol
+  storage: 20Gi
+  selector:
+    type: LoadBalancer
+  ports:
+    port: 1414
+    targetPort: 1414
+    protocol: TCP
+
+  route:
+    name: mqweb
+    tls:
+      insecureEdgeTerminationPolicy: Redirect
+      termination: passthrough
+    to:
+      kind: Service
+      name: mq-web
+    wildcardPolicy: None
+    ports:
+      port: 9443
+      targetPort: 9443

@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: {{ .Values.route.name }}
+spec:
+  tls:
+    insecureEdgeTerminationPolicy: {{ .Values.route.tls.insecureEdgeTerminationPolicy }}
+    termination: {{ .Values.route.tls.termination }}
+  to:
+    kind: {{ .Values.route.to.kind }}
+    name: {{ .Values.route.to.name }}
+  wildcardPolicy: {{ .Values.route.wildcardPolicy }}
