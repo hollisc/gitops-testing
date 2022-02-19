@@ -1,12 +1,12 @@
 apiVersion: v1
-kind: Service
+kind: {{ .Values.route.to.kind }}
 metadata:
-  name: mq-data
+  name: "{{ .Values.name }}-data"
 spec:
   selector:
-    app: mq
-  type: ClusterIP
+    app: {{ .Values.name }}
+  type: {{ .Values.type }}
   ports:
-  - protocol: TCP
-    port: 1414
-    targetPort: 1414
+  - protocol: {{ .Values.ports.protocol }}
+    port: {{ .Values.ports.port }}
+    targetPort: {{ .Values.ports.targetPort }}

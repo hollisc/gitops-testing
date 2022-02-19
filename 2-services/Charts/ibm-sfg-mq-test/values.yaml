@@ -1,0 +1,12 @@
+# Default values for ibm-sfg-mq.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+name: mq
+replicaCount: 1
+serviceName: mq
+serviceAccount: mq
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+storageClassName: ibmc-block-gold

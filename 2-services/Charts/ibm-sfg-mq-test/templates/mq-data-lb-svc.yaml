@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mq-data-lb
+spec:
+  selector:
+    app: mq
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 1414
+    targetPort: 1414

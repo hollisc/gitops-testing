@@ -1,12 +1,12 @@
 apiVersion: v1
-kind: Service
+kind: {{ .Values.route.to.kind }}
 metadata:
-  name: mq-web-lb
+  name: "{{ .Values.name }}-web-lb"
 spec:
   selector:
-    app: mq
-  type: LoadBalancer
+    app: {{ .Values.name }}
+  type: {{ .Values.selector.type }}
   ports:
-  - protocol: TCP
-    port: 9443
-    targetPort: 9443
+  - protocol: {{ .Values.ports.protocol }}
+    port: {{ .Values.route.ports.port }}
+    targetPort: {{ .Values.route.ports.targetPort }}

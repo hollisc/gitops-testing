@@ -1,12 +1,12 @@
 apiVersion: v1
-kind: Service
+kind: {{ .Values.route.to.kind }}
 metadata:
-  name: mq-data-lb
+  name: "{{ .Values.name }}-data-lb"
 spec:
   selector:
-    app: mq
-  type: LoadBalancer
+    app: {{ .Values.name }}
+  type: {{ .Values.selector.type }}
   ports:
-  - protocol: TCP
-    port: 1414
-    targetPort: 1414
+  - protocol: {{ .Values.ports.protocol }}
+    port: {{ .Values.ports.port }}
+    targetPort: {{ .Values.ports.targetPort }}
