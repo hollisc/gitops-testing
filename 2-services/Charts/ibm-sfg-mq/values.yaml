@@ -1,34 +1,12 @@
-# Default values for Helming.
+# Default values for ibm-sfg-mq.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 name: mq
-type: ClusterIP
-replicas: 1
+replicaCount: 1
+serviceName: mq
+serviceAccount: mq
 image:
-  repository: ibmcom/mq
-  imagePullPolicy: IfNotPresent
+  repository: nginx
+  pullPolicy: IfNotPresent
 storageClassName: ibmc-block-gold
-volumeMounts:
-  mountPath: /var/mqm
-  name: mqvol
-storage: 20Gi
-selector:
-  type: LoadBalancer
-ports:
-  port: 1414
-  targetPort: 1414
-  protocol: TCP
-
-route:
-  name: mqweb
-  tls:
-    insecureEdgeTerminationPolicy: Redirect
-    termination: passthrough
-  to:
-    kind: Service
-    name: mq-web
-  wildcardPolicy: None
-  ports:
-    port: 9443
-    targetPort: 9443
