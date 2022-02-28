@@ -22,4 +22,4 @@ kubeVersion: '>=1.14.6'
 maintainers:
 - name: IBM
 name: ibm-sfg-prod
-version: 2.0.1
+version: 2.0.2
