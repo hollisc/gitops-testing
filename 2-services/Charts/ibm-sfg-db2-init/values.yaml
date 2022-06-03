@@ -1,0 +1,18 @@
+# Default values for ibm-db2.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+name: db2
+replicaCount: 1
+serviceName: db2
+serviceAccount: db2
+image:
+  repository: ibmcom/db2:11.5.7.0
+  pullPolicy: IfNotPresent
+storageClassName: ibmc-block-gold
+
+service:
+  name: db2-lb
+  type: LoadBalancer
+  port: 50000
+
