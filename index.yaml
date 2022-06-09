@@ -286,6 +286,17 @@ entries:
     urls:
     - https://hollisc.github.io/gitops-testing/ibm-cp4sthreatmanagements-instance-0.1.0.tgz
     version: 0.1.0
+  ibm-cpd-ds-instance:
+  - apiVersion: v2
+    appVersion: "4"
+    created: "2022-03-11T10:53:09.53099-05:00"
+    description: A Helm chart for Kubernetes
+    digest: 6d97a9e4b14ba50575be0efe6c8ab100283ec0dd3d617d86dae1c4f451a57af0
+    name: ibm-cpd-ds-instance
+    type: application
+    urls:
+    - https://hollisc.github.io/gitops-testing/ibm-cpd-ds-instance-1.0.0.tgz
+    version: 1.0.0
   ibm-cpd-platform-instance:
   - apiVersion: v2
     appVersion: 1.16.0
