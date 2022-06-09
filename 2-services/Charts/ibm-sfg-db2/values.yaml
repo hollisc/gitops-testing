@@ -10,6 +10,7 @@ image:
   repository: ibmcom/db2:11.5.7.0
   pullPolicy: IfNotPresent
 storageClassName: ibmc-block-gold
+resourcesStorage: 20Gi
 
 service:
   name: db2-lb
